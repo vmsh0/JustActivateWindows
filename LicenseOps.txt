@@ -1,0 +1,46 @@
+﻿This is what I gathered by reverse-engineering the SoftwareLicensingProduct and SoftwareLicensingService
+WMI classes and the slmgr.vbs script.
+I'm not taking into account all edge cases like the script does, because the only use case I'm supporting
+is activating a newly installed unlicensed Windows copy (although JAW successfully recovers from many bad
+situations left behind by mediocre activators.)
+
+- Product key removal removal ("upk")
+
+Iterate over all SoftwareLicensingProduct, select these: 
+ApplicationId = "55c92734-d682-4d71-983e-d6ec3f16059f" (slmgr: "private const WindowsAppId")
+LicenseIsAddon = False
+PartialProductKey <> null
+
+On each:
+Invoke UninstallProductKey()
+
+Get SoftwareLicensingService singleton
+NOTE: Invoking RefreshLicenseStatus() after this operation returns COM error 0xC004F013 /
+      SL_E_RIGHT_NOT_GRANTED
+
+
+- Product key install ("ipk")
+
+Get SoftwareLicensingService singleton
+Invoke InstallKey(string key)
+Invoke RefreshLicenseStatus()
+
+
+- Set KMS server address ("skms")
+
+Get SoftwareLicensingService singleton
+Invoke SetKeyManagementServiceMachine(string name)
+
+
+- Activate ("ato")
+
+Iterate over all SoftwareLicensingProduct, select these (there should be one, and it should be a VL SKU):
+ApplicationId = "55c92734-d682-4d71-983e-d6ec3f16059f" (slmgr: "private const WindowsAppId")
+LicenseIsAddon = False
+PartialProductKey <> null
+
+On it:
+Invoke Activate()
+
+Get SoftwareLicensingService singleton
+Invoke RefreshLicenseStatus()
