@@ -31,6 +31,10 @@ namespace jaw
             skus.Add("Server 2016 Datacenter", "CB7KF-BWN84-R7R2Y-793K2-8XDDG");
             skus.Add("Server 2016 Standard", "WC2BQ-8NRM3-FDDYY-2BFGV-KHKQY");
             skus.Add("Server 2016 Essentials", "JCKRF-N37P4-C2D82-9YXRT-4M63B");
+            skus.Add("10 Home", "TX9XD-98N7V-6WMQ6-BX7FG-H8Q99");
+            skus.Add("10 Home N", "3KHY7-WNT83-DGQKR-F7HPR-844BM");
+            skus.Add("10 Home Single Language", "7HNRX-D7KGG-3K4RQ-4WPJ4-YTDFH");
+            skus.Add("10 Home Country Specific", "PVMJN-6DFY6-9CCP6-7BKTT-D3WVR");
             skus.Add("10 Professional", "W269N-WFGWX-YVC9B-4J6C9-T83GX");
             skus.Add("10 Professional N", "MH37W-N47XK-V7XM9-C7227-GCQG9");
             skus.Add("10 Pro", "W269N-WFGWX-YVC9B-4J6C9-T83GX");
