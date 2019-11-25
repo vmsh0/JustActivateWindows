@@ -5,7 +5,13 @@ Hi! Welcome to JAW.
 
 JAW stands for "Just Activate Windows", and it is a **no-nonsense**, **barebone**, **GUI activator** for recent 64-bit Microsoft Windows operating systems.
 
-JAW is **officially supported** on Windows 10 Pro, although it should work just fine on any Windows 10 edition, and probably even on Windows 7 (not reccomended!).
+JAW should work just fine on any Windows 10 edition, and probably even on Windows 7 (not reccomended!).
+
+It has been **successfully tested** on:
+- Windows 10 Pro
+- Windows 10 Home
+
+You can let me know that it works on other editions as well by opening an Issue.
 
 ### Download
 Before downloading JAW, I ask to you to **consider reading** the "Why JAW?" section of this Readme. You can download the latest ready-to-use JAW release from the "releases" page of this GitHub repository.
