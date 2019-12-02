@@ -47,7 +47,7 @@ namespace jaw
 
             using (ManagementObjectCollection queryCollection = searcher.Get())
             {
-                Logger.Debug("Seach yielded " + queryCollection.Count.ToString() + " result(s)");
+                Logger.Debug("Search yielded " + queryCollection.Count.ToString() + " result(s)");
 
                 if (queryCollection.Count >= 1)
                     foreach (ManagementObject m in queryCollection)
@@ -70,7 +70,7 @@ namespace jaw
             // unroll to a list because i don't know c# patterns
             using (ManagementObjectCollection queryCollection = searcher.Get())
             {
-                Logger.Debug("Seach yielded " + queryCollection.Count.ToString() + " result(s)");
+                Logger.Debug("Search yielded " + queryCollection.Count.ToString() + " result(s)");
 
                 foreach (ManagementObject m in queryCollection)
                     objs.Add(m);
