@@ -28,25 +28,40 @@ namespace jaw
         {
             skus = new Dictionary<string, string>();
 
+            // Server 2016
             skus.Add("Server 2016 Datacenter", "CB7KF-BWN84-R7R2Y-793K2-8XDDG");
             skus.Add("Server 2016 Standard", "WC2BQ-8NRM3-FDDYY-2BFGV-KHKQY");
             skus.Add("Server 2016 Essentials", "JCKRF-N37P4-C2D82-9YXRT-4M63B");
+
+            // 10 Home
             skus.Add("10 Home", "TX9XD-98N7V-6WMQ6-BX7FG-H8Q99");
             skus.Add("10 Home N", "3KHY7-WNT83-DGQKR-F7HPR-844BM");
             skus.Add("10 Home Single Language", "7HNRX-D7KGG-3K4RQ-4WPJ4-YTDFH");
             skus.Add("10 Home Country Specific", "PVMJN-6DFY6-9CCP6-7BKTT-D3WVR");
+
+            // 10 Pro
             skus.Add("10 Professional", "W269N-WFGWX-YVC9B-4J6C9-T83GX");
             skus.Add("10 Professional N", "MH37W-N47XK-V7XM9-C7227-GCQG9");
             skus.Add("10 Pro", "W269N-WFGWX-YVC9B-4J6C9-T83GX");
             skus.Add("10 Pro N", "MH37W-N47XK-V7XM9-C7227-GCQG9");
-            skus.Add("10 Enterprise", "NPPR9-FWDCX-D2C8J-H872K-2YT43");
-            skus.Add("10 Enterprise N", "DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4");
+
+            // 10 Education
             skus.Add("10 Education", "NW6C2-QMPVW-D7KKK-3GKT6-VCFB2");
             skus.Add("10 Education N", "2WH4N-8QGBV-H22JP-CT43Q-MDWWJ");
+
+            // 10 Enterprise
+            // Note: 2015 and 2016 LTSC's probably wont't work
+            //       we should find a better way to match Windows versions
+            skus.Add("10 Enterprise", "NPPR9-FWDCX-D2C8J-H872K-2YT43");
+            skus.Add("10 Enterprise N", "DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4");
             skus.Add("10 Enterprise 2015 LTSB", "WNMTR-4C88C-JK8YV-HQ7T2-76DF9");
             skus.Add("10 Enterprise 2015 LTSB N", "2F77B-TNFGY-69QQF-B8YKP-D69TJ");
             skus.Add("10 Enterprise 2016 LTSB", "DCPHK-NFMTC-H88MJ-PFHPY-QJ4BJ");
             skus.Add("10 Enterprise 2016 LTSB N", "QFFDN-GRT3P-VKWWX-X7T3R-8B639");
+            skus.Add("10 Enterprise LTSC", "M7XTQ-FN8P6-TTKYV-9D4CC-J462D");
+            skus.Add("10 Enterprise N LTSC", "92NFX-8DJQP-P6BBQ-THF9C-7CG2H");
+
+            // Old editions - we'll probably not support these
             skus.Add("8.1 Professional", "GCRJD-8NW9H-F2CDX-CCM8D-9D6T9");
             skus.Add("8.1 Professional N", "HMCNV-VVBFX-7HMBH-CTY9B-B4FXY");
             skus.Add("8.1 Enterprise", "MHF9N-XY6XB-WVXMC-BTDCT-MKKG7");
