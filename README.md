@@ -1,6 +1,4 @@
-﻿
-
-# Just Activate Windows!
+﻿# Just Activate Windows!
 Hi! Welcome to JAW.
 
 JAW stands for "Just Activate Windows", and it is a **no-nonsense**, **barebone**, **GUI activator** for recent 64-bit Microsoft Windows operating systems.
@@ -10,8 +8,9 @@ JAW should work just fine on any Windows 10 edition, and probably even on Window
 It has been **successfully tested** on:
 - Windows 10 Pro
 - Windows 10 Home
+- Windows 10 Enterprise LTSC (2019)
 
-You can let me know that it works on other editions as well by opening an Issue.
+You can let me know that it works (or that it doesn't! - please attach the log) on other editions as well by opening an Issue.
 
 ### Download
 Before downloading JAW, I ask to you to **consider reading** the "Why JAW?" section of this Readme. You can download the latest ready-to-use JAW release from the "releases" page of this GitHub repository.
@@ -69,29 +68,26 @@ JAW performs **KMS activation**, using a dummy KMS server (from the vlmcsd proje
 ### How does it work?
 This is very approximate. Please **read the source code** to find out more!
 
-- **Key installation**
--- The system is checked for existing keys. If the main key is the correct VL key, JAW proceeds to the next step; otherwise, it clears all keys and installs the correct one.
-- **Tap driver installation**
--- JAW installs a Tap driver (currently, the tap0901 driver from the OpenVPN project) and configures it for the dummy KMS server.
-- **Service installation and activation**
--- JAW installs the dummy KMS server as a services, which will listen on the Tap driver interface, and configures the Windows firewall accordingly.
--- The Software Licensing Service is configured to use the dummy KMS server for activation, and the activation is triggered.
+- **Key installation.** The system is checked for existing keys. If the main key is the correct VL key, JAW proceeds to the next step; otherwise, it clears all keys and installs the correct one.
+- **Tap driver installation.** JAW installs a Tap driver (currently, the tap0901 driver from the OpenVPN project) and configures it for the dummy KMS server.
+- **Service installation and activation.** JAW installs the dummy KMS server as a services, which will listen on the Tap driver interface, and configures the Windows firewall accordingly. The Software Licensing Service is then configured to use the dummy KMS server for activation, and the activation is triggered.
 
 **Further documentation** can also be obtained by running JAW and clicking on the *?* button for each step.
 
 ## How can I contribute?
 This is the current **to-do list** (some of these items are further detailed in the issue tracker):
 
-- Code-related
--- Generally improve the code, which as of now is pretty rudimentary
--- Revamp the GUI
--- Put more sanity checks throughout the WMI operations
--- Make the firewall step reversible
--- Localization support
-- Project-related
--- Localization (depends upon Localization support)
--- Better release process (incl. compiling vlmcsd as part of the build process and automatic versioning based off git commit id and tag - I have no idea how to do that with MSBuild)
--- 32-bit release?
+#### Code-related
+- Generally improve the code, which as of now is pretty rudimentary
+- Revamp the GUI
+- Put more sanity checks throughout the WMI operations
+- Make the firewall step reversible
+- Localization support
+
+#### Project-related
+- Localization (depends upon Localization support)
+- Better release process (incl. compiling vlmcsd as part of the build process and automatic versioning based off git commit id and tag - I have no idea how to do that with MSBuild)
+- 32-bit release?
 
 Some of these items have a **corresponding Issue** in the tracker with more details.
 
