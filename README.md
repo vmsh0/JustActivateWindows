@@ -44,26 +44,26 @@ Sorry to hear that! Please, **open an Issue** on this repository as follows:
 - **Attach the *jaw.log* file**, which you can find in the same directory as the JAW executable (note: the file gets overwritten every time you restart JAW, so, if something goes wrong, it may be a good idea to make a copy of the file before restarting JAW)
 - If you got a **runtime error or exception**, a dialog should have appeared on your screen, containing a long piece of text full of technical stuff; if that's the case, please **make a screenshot** of the dialog, **copy all the text** into a text file, and **attach** both to the Issue
 
-## Why JAW?
-Because **the alternatives suck**:
+## Some cheap ethics
+Why JAW? Because **the alternatives suck**:
 
-- **Buying Windows at full price...** if you are here, you've already decided against that; that's ok: I provide solutions, not judgement.
+- **Buying Windows at full price...** if you are here, you've already decided against that, and I surely can't fix that.
 - **Buying "cheap keys" online...** very convenient, but those keys are either stolen or legally void (i.e. *technically* they may activate Windows, but they are at best just as illegal as an activator).
-- **Manually running a KMS emulator such as vlmcsd...** complicated, and thus error prone.
+- **Manually running a KMS emulator...** complicated and annoying, especially if you like to clean-install often.
 - **Using a different GUI activator...** most are not Open Source, only available behind forum registrations/ad-walls and complicated.
 - **Using an hwid generator...** *technically* the same as using an activator, but way more controversial both legally and ethically: by using an hwid generator you are submitting false data to Microsoft to obtain a permanent license you have not right to have.
 
 ### Does any of this justify using an activator?
-No, **none of what I stated justifies using an activator**. But since you, like many other people, have already decided to do that, I want you to be able to use an Open Source, easy-to-use and readily available one, the author of which cares enough to explain what it actually does to your system.
-
-Yes, this is all **entirely philosophical**! I think we have to be a bit more **concious** about how we think about computing and software, and this is my way to do that.
+If you don't own a license to use Microsoft Windows on the computer you're installing it on (no, cheap keys purchased online don't count), then **none of what I stated justifies using an activator**. But since you, like many other people, have still decided to do that, I want you to be able to use an Open Source, easy-to-use and readily available one, the author of which cares enough to explain what it actually does to your system.
 
 I believe this piece of software (and this way of thinking) **benefits** both **the end users** and **Microsoft**. Two very practical benefits it has are that **it minimizes the chance that something will go wrong** (malware, data loss, general frustration because you just want to get on with your life) and **de-incentivizes the commerce of "cheap keys"** (because now the alternative is just as practical).
 
-### What are some alternatives which are fully ethically-justifiable?
-If you can, **switch** to using a **GNU/Linux** distribution. I suggest using Debian (and I'm also a fan of Arch Linux, although I don't use it). I also suggest not using Ubuntu or anything else from Canonical.
+Of course, if you own a valid Microsoft Windows license for your computer, then none of this really applies. You have a right to use the software you've bought!
 
-I regularly use GNU/Linux, but as of today it cannot fully satisfy my computing needs; thus, I compromise and also use Microsoft Windows. Although I own a Windows license, I still use JAW to activate it on my PC, *just cuz*.
+### What if I don't want to buy Microsoft Windows, but I also don't want to use it illegally?
+If you can, **switch** to using a **GNU/Linux** distribution. I suggest Debian and Arch Linux.
+
+I regularly use GNU/Linux, but as of today it cannot /fully/ satisfy my computing needs; thus, I compromise and also use Microsoft Windows. Although I own a Windows license, I still use JAW to activate it on my PC, because [DRM is evil](https://www.eff.org/issues/drm) and I don't bother with it.
 
 ## What kind of activation does JAW perform?
 JAW performs **KMS activation**, using a dummy KMS server (from the vlmcsd project).
@@ -89,12 +89,11 @@ This is the current **to-do list** (some of these items are further detailed in 
 
 #### Project-related
 - Localization (depends upon Localization support)
-- Better release process (incl. compiling vlmcsd as part of the build process and automatic versioning based off git commit id and tag - I have no idea how to do that with MSBuild)
-- 32-bit release?
+- Better release process (incl. compiling vlmcsd as part of the build process and automatic versioning based off git commit id and tag - I have no idea how to do that with MSBuild and I don't care to learn, so please help!)
 
 Some of these items have a **corresponding Issue** in the tracker with more details.
 
-**Everyone is welcome** to work on these items. The correct way to do that is to **clone** the repository, **do** the work and submit a **Pull request**. If you are unsure about something, open an Issue.
+**Everyone is welcome** to work on these items. The correct way to do that is to **fork** the repository, **do** the work and submit a **Pull request**. If you are unsure about something, open an Issue.
 
 Please follow the **existing coding style**. I will not accept PRs contaning badly-formatted code, mixed tab and spaces (and in general different indentation style), with identifiers written in a language different than English and any other form of bad code.
 
