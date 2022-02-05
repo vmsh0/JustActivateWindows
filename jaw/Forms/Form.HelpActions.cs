@@ -27,7 +27,7 @@ namespace jaw
 
         private void CreditsWhy_Click(object sender, EventArgs e)
             => MessageBox.Show(
-                "Please read the explanation given at gitlab.com/vmsh0/jaw.",
+                "Please read the explanation given at github.com/vmsh0/JustActivateWindows.",
                 "Is this ok?");
 
         private void Help1_Click(object sender, EventArgs e)
