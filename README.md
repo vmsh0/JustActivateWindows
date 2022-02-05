@@ -5,7 +5,7 @@ JAW stands for "Just Activate Windows", and it is a **no-nonsense**, **barebone*
 
 JAW should work just fine on any Windows 10 edition, and probably even on Windows 7 (not reccommended!).
 
-JAW also works for Windows 11 Pro. Support for other editions of Windows 11 has not been added yet. If you need it, please open an issue. Unfortunately the version with Windows 11 support hasn't been packaged yet, but the latest packaged version works fine if you manually specify the KMS Client Product Key for your Windows edition when requested.
+JAW also works for Windows 11 Pro. Support for other editions of Windows 11 has not been added yet. If you need it, please open an issue.
 
 It has been **successfully tested** on:
 - Windows 10 Pro
