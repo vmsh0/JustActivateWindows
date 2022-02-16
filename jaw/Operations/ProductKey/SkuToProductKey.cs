@@ -33,12 +33,12 @@ namespace jaw
             skus.Add("Server 2016 Standard", "WC2BQ-8NRM3-FDDYY-2BFGV-KHKQY");
             skus.Add("Server 2016 Essentials", "JCKRF-N37P4-C2D82-9YXRT-4M63B");
 
-	    // Server 2019
+            // Server 2019
             skus.Add("Server 2019 Datacenter", "WMDGN-G9PQG-XVVXX-R3X43-63DFG");
             skus.Add("Server 2019 Standard", "N69G4-B89J2-4G8F4-WWYCC-J464C");
             skus.Add("Server 2019 Essentials", "WVDHN-86M7X-466P6-VHXV7-YY726");
 
-	    // Server 2022
+            // Server 2022
             skus.Add("Server 2022 Datacenter", "WX4NM-KYWYW-QJJR4-XV3QB-6VM33");
             skus.Add("Server 2022 Standard", "VDYBN-27WPP-V4HQT-9VMD4-VMK7H");
 
